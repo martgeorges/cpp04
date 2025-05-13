@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 08:24:39 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/13 10:12:28 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:28:29 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Cat : public Animal
         ~Cat();
         Cat & operator = (const Cat &other);
 
-
+        void makeSound() const;
 };
 
 #endif

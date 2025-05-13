@@ -6,25 +6,20 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:41:44 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/13 07:51:14 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:42:17 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-Animal::Animal()
+Animal::Animal(): _type("Default")
 {
-    std::cout << "Animal constructor called"  << std::endl;
+    std::cout << "Animal Default constructor called"  << std::endl;
 }
 
 Animal::~Animal()
 {
-    std::cout << "Animal destructor called" << std::endl;
-}
-
-Animal::Animal(std::string name)
-{
-    std::cout << "Animal constructor name called" << std::endl;
+    std::cout << "Animal Default destructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &copy)
@@ -40,7 +35,7 @@ Animal& Animal::operator=(const Animal &other)
     return *this;
 }
 
-void Animal::makeSound()
+void Animal::makeSound() const
 {
     std::cout << "This animal doesn't make sound" << std::endl;
 }
