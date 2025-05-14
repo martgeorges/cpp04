@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:41:44 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/13 10:42:17 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/13 13:18:44 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Animal& Animal::operator=(const Animal &other)
 
 void Animal::makeSound() const
 {
-    std::cout << "This animal doesn't make sound" << std::endl;
+    std::cout << "Animal doesn't make sound" << std::endl;
 }
 
 std::string Animal::getType() 
