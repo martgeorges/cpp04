@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:41:44 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/14 07:58:58 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/14 11:00:15 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 Animal::Animal(): _type("Default")
 {
-    std::cout << "Animal Default constructor called"  << std::endl;
+    std::cout << "\033[33mAnimal Default constructor called\033[0m"  << std::endl;
 }
 
 Animal::~Animal()
 {
-    std::cout << "Animal Default destructor called" << std::endl;
+    std::cout << "\033[33mAnimal Default destructor called\033[0m" << std::endl;
 }
 
 Animal::Animal(const Animal &copy)
 {
-    std::cout << "Animal copy constructor called" << std::endl;
+    std::cout << "\033[33mAnimal copy constructor called\033[0m" << std::endl;
     *this = copy;
 }
 
 Animal& Animal::operator=(const Animal &other)
 {
-    std::cout << "Animal assignment operator called" << std::endl;
+    std::cout << "\033[33mAnimal assignment operator called\033[0m" << std::endl;
     this->_type = other._type;
     return *this;
 }
