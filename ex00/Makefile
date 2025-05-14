@@ -6,7 +6,7 @@
 #    By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/07 15:46:17 by mgeorges          #+#    #+#              #
-#    Updated: 2025/05/13 14:37:07 by mgeorges         ###   ########.fr        #
+#    Updated: 2025/05/14 08:42:42 by mgeorges         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ C++		=	c++
 C++_FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp \
-			Animal.cpp Dog.cpp Cat.cpp
+			Animal.cpp Dog.cpp Cat.cpp \
+			WrongAnimal.cpp WrongCat.cpp 
 				
 OBJS		=	$(SRCS:.cpp=.o)
 

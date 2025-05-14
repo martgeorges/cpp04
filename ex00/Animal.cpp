@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:41:44 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/13 13:18:44 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/14 07:58:58 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void Animal::makeSound() const
     std::cout << "Animal doesn't make sound" << std::endl;
 }
 
-std::string Animal::getType() 
+std::string Animal::getType() const
 {
     return (this->_type);
 }

@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:41:36 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/13 10:41:42 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/14 07:59:03 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Animal
         Animal & operator = (const Animal &other);
 
         virtual void makeSound() const;
-        std::string getType();
+        std::string getType() const;
 };
 
 #endif
