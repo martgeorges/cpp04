@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 14:44:46 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/15 14:54:28 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/15 17:45:59 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ Brain::~Brain()
 
 Brain & Brain::operator=(const Brain &other) {
     //boucle for car index = 100 
+    if (this == &other)
+        return *this;
     for (int i = 0; i < 100; i++) {
         this->_ideas[i] = other._ideas[i];
     }
