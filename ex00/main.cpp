@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/14 10:55:04 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/14 13:33:18 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int main()
 {
-    std::cout << "\033[34m=== Test 1: Animal, Dog and Cat ===\033[0m" << std::endl;
+    std::cout << "\n\033[34m=== Test 1: Animal, Dog and Cat ===\033[0m\n" << std::endl;
     const Animal* meta = new Animal();
     const Animal* j = new Dog();
     const Animal* i = new Cat();
@@ -44,7 +44,7 @@ int main()
     delete i;
     delete j;
 
-    std::cout << "\033[34m=== Test 2: WrongAnimal, WrongCat ===\033[0m" << std::endl;
+    std::cout << "\n\033[34m=== Test 2: WrongAnimal, WrongCat ===\033[0m\n" << std::endl;
     
     const WrongAnimal* test = new WrongAnimal();
     const WrongAnimal* test1 = new WrongCat();
@@ -60,7 +60,7 @@ int main()
     delete test;
     delete test1;
     
-    std::cout << "\033[34m=== Test 3: Direct WrongCat pointer ===\033[0m" << std::endl;
+    std::cout << "\n\033[34m=== Test 3: Direct WrongCat pointer ===\033[0m\n" << std::endl;
 
     const WrongCat* realWrongcat = new WrongCat();
 
