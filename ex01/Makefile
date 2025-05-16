@@ -6,7 +6,7 @@
 #    By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/07 15:46:17 by mgeorges          #+#    #+#              #
-#    Updated: 2025/05/14 13:34:13 by mgeorges         ###   ########.fr        #
+#    Updated: 2025/05/16 09:09:03 by mgeorges         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ OBJ_DIR     = build
 
 SRCS        = main.cpp \
               Animal.cpp Dog.cpp Cat.cpp \
-              WrongAnimal.cpp WrongCat.cpp
+              WrongAnimal.cpp WrongCat.cpp \
+			  Brain.cpp 
 
 OBJS        = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 

@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:25:11 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/14 10:59:10 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/16 11:30:45 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 WrongCat::WrongCat(): WrongAnimal()
 {
-    this->_type = "WrongCat";
     std::cout << "\033[33mWrongCat default constructor called\033[0m" << std::endl;
 }
 
@@ -35,5 +34,5 @@ WrongCat & WrongCat::operator= (const WrongCat &other) {
 }
 
 void WrongCat::makeSound() const {
-    std::cout << this->_type << " says : meooooww!" << std::endl;
+    std::cout <<  "WrongCat says : meooooww!" << std::endl;
 }

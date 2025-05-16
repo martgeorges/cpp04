@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 14:44:46 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/15 17:45:59 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/16 09:08:30 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ Brain::Brain()
 
 Brain::Brain(const Brain &copy) {
     std::cout << "Brain copy constructor called" << std::endl;
-    *this = copy;
+    for (int i = 0; i < 100; ++i) {
+        this->_ideas[i] = copy._ideas[i]; 
+    }
 }
 
 Brain::~Brain()
@@ -43,6 +45,7 @@ const std::string Brain::getIdea(unsigned int index) const {
         return (this->_ideas[index]);
     else
         std::cout << "Only 100 ideas per brain" << std::endl;
+    return "";
 }
 
 void Brain::setIdea(unsigned int index, std::string idea) {
