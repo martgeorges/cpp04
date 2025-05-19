@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/19 08:28:48 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/19 09:23:17 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,16 @@ int main()
 
     cat->makeSound();
     dog->makeSound();
-
-    std::cout << "\n\033[34m==== TEST 2: getType() ====\033[0m\n" << std::endl;
-    std::cout << "Type of animal: " << cat->getType() << std::endl;
-    std::cout << "Type of animal: " << dog->getType() << std::endl;
-
     delete cat;
     delete dog;
+    
+    std::cout << "\n\033[34m==== TEST 2: getType() ====\033[0m\n" << std::endl;
+    Animal* cat1 = new Cat();
+    Animal* dog1 = new Dog();
+    std::cout << "Type of animal: " << cat1->getType() << std::endl;
+    std::cout << "Type of animal: " << dog1->getType() << std::endl;
+
+    delete cat1;
+    delete dog1;
     return 0;
 }
