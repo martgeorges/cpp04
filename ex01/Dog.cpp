@@ -6,14 +6,14 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 07:56:25 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/16 10:18:23 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/19 08:37:11 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
 Dog::Dog(): Animal() {
-    this->_type = "Dog";
+    this->_type = "\033[32mDog";
     this->_brain = new Brain();
     std::cout << "\033[33mDog default constructor called\033[0m" << std::endl;
 }

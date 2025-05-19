@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 14:44:46 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/16 09:08:30 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/19 08:30:51 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Brain::Brain()
 {
-    std::cout << "Brain default constructor called" << std::endl;
+    std::cout << "\033[33mBrain default constructor called\033[0m" << std::endl;
 }
 
 Brain::Brain(const Brain &copy) {
-    std::cout << "Brain copy constructor called" << std::endl;
+    std::cout << "\033[33mBrain copy constructor called\033[0m" << std::endl;
     for (int i = 0; i < 100; ++i) {
         this->_ideas[i] = copy._ideas[i]; 
     }
@@ -26,7 +26,7 @@ Brain::Brain(const Brain &copy) {
 
 Brain::~Brain()
 {
-    std::cout << "Brain desctructor called" << std::endl;
+    std::cout << "\033[33mBrain desctructor called\033[0m" << std::endl;
 }
 
 Brain & Brain::operator=(const Brain &other) {
@@ -36,7 +36,7 @@ Brain & Brain::operator=(const Brain &other) {
     for (int i = 0; i < 100; i++) {
         this->_ideas[i] = other._ideas[i];
     }
-    std::cout << "Brain assignment operator called" << std::endl;
+    std::cout << "\033[33mBrain assignment operator called\033[0m" << std::endl;
     return *this;
 }
 

@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:24:57 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/16 11:25:27 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/19 08:38:02 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 WrongAnimal::WrongAnimal()
 {
-    this->_type = "WrongAnimal";
+    this->_type = "\033[32mWrongAnimal";
     std::cout << "\033[33mWrongAnimal Default constructor called\033[0m" << std::endl;
 }
 

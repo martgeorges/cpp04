@@ -6,14 +6,14 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 08:24:49 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/16 10:39:13 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/19 08:36:57 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
 Cat::Cat(): Animal() {
-    this->_type = "Cat";
+    this->_type = "\033[32mCat";
     this->_brain = new Brain();
     std::cout << "\033[33mCat default constructor called\033[0m" << std::endl;
 }
