@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/16 11:16:34 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/20 10:16:17 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ int main()
         delete animals[i];
     }
     
-    std::cout << "\n\033[34m==== TEST 4 : wrongAnimal ====\033[0m\n" << std::endl;
+    /*std::cout << "\n\033[34m==== TEST 4 : wrongAnimal ====\033[0m\n" << std::endl;
     const WrongAnimal* wrong = new WrongCat();
     wrong->makeSound();
-    delete wrong;
+    delete wrong;*/
     return 0;
 }

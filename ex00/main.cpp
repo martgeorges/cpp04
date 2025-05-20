@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/14 13:33:18 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/20 09:59:35 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,14 @@ int main()
     std::cout << "\033[32mWrongCat sound: \033[0m"; realWrongcat->makeSound();
 
     delete realWrongcat;
+
+    std::cout << "\n\033[34m=== Test 4: Stack Allocation ===\033[0m\n" << std::endl;
+    Dog dog;
+    Cat cat;
+    std::cout << "\033[32mType : \033[0m" << dog.getType() << std::endl;
+    std::cout << "\033[32mType : \033[0m"<< cat.getType() << std::endl;
+
+    dog.makeSound();
+    cat.makeSound();
     return 0;
 }

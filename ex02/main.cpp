@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/19 09:23:17 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/20 10:21:36 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,14 @@ int main()
 
     delete cat1;
     delete dog1;
+
+    std::cout << "\n\033[34m==== TEST 3: Deep Copy ====\033[0m\n" << std::endl;
+    Dog basic;
+    basic.setIdea(0, "Attraper une balle");
+    Dog copy = basic;
+    copy.setIdea(0, "Faire dodo");
+    std::cout << "Basic thinks: " << basic.getIdea(0) << std::endl;
+    std::cout << "Copy thinks: " << copy.getIdea(0) << std::endl;
+    
     return 0;
 }
