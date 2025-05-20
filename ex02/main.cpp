@@ -6,7 +6,7 @@
 /*   By: mgeorges <mgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 10:19:55 by mgeorges          #+#    #+#             */
-/*   Updated: 2025/05/20 10:21:36 by mgeorges         ###   ########.fr       */
+/*   Updated: 2025/05/20 11:38:57 by mgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,5 @@ int main()
     copy.setIdea(0, "Faire dodo");
     std::cout << "Basic thinks: " << basic.getIdea(0) << std::endl;
     std::cout << "Copy thinks: " << copy.getIdea(0) << std::endl;
-    
     return 0;
 }
